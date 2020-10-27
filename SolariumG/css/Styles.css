@@ -1,0 +1,12 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+body {
+}
+
+.TextoContenido {
+    font-family: 'Sen', sans-serif;
+}
+
+.NavBarColor {
+    background-color:darkorange;
+    border-color:black;
+}

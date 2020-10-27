@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="SolariumG.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Solarium Gaming</title>
+    <%--se indica que librerias se van a utilizar--%>
+    <link href="css/Styles.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body class="TextoContenido">
+    <form id="form1" runat="server">
+        <%--//////////////////////////////////////////////////////////////////////////////////--%>
+        <div id="Encabezado"><%--Aqui esta el banner--%>
+            <div class="text-center">
+                <img class="img-fluid" src="css/img/Banner.jpg" alt="Solarium Gaming" style="height:300px; width:1000px"  />
+            </div>
+        </div>
+        <div id="menu" class="TextoContenido" ><%--Aqui esta la barra de accesos--%>
+            <nav class="navbar navbar-expand-md navbar-light" style="background-color: #FFA600">
+                <a class="navbar-brand" href="Default.aspx" style="font-size: 20px; font-weight: 500 "><img src="css/img/Home.jpg" alt="Solarium Gaming" style="height:40px; width:40px" /><%--Solarium Gaming--%></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="opciones" class="collapse navbar-collapse">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="QuienesSomos.aspx" <%--style="color:darkorange--%>" >¿Quien somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Equipo.aspx" <%--style="color:darkorange"--%>>Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contacto.aspx" <%--style="color:darkorange--%>">Contacto</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+       <%-- /////////////////////////////////////////////////////////////////////////////////--%>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+    <%--se definen las librerias de js--%>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>
