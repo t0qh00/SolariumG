@@ -1,12 +1,206 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
-body {
+/*//////////////////ZeroPlays/////////////////////////////////*/
+:root {
+    --background-dark: #7BDF5D;
+    --text-light: rgba(255,255,255,0.6);
+    --text-lighter: rgba(255,255,255,0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+}
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.TextoContenido {
-    font-family: 'Sen', sans-serif;
+html {
+    height: 100%;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 16px;
 }
 
-.NavBarColor {
-    background-color:darkorange;
-    border-color:black;
+.team-section {
+    align-items: flex-start;
+    background-color: darkturquoise;
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+    padding: var(--spacing-xxl) var(--spacing-l);
 }
+
+.cgrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: var(--spacing-l);
+    grid-row-gap: var(--width-container);
+    width: 100%;
+}
+
+@media(min-width: 540px) {
+    .cgrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 960px) {
+    .cgrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card {
+    list-style: none;
+    position: relative;
+}
+
+    .card:before {
+        content: '';
+        display: block;
+        padding-bottom: 150%;
+        width: 100%;
+    }
+
+.cardbg {
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--spacing-1);
+    bottom: 0;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition: filter 200ms linear, transform 200ms linear;
+}
+
+.card:hover .cardbg {
+    transform: scale(1.10) translateZ(0);
+}
+
+.ccontent {
+    left: 0;
+    padding: var(--spacing-l);
+    position: absolute;
+    top: 0;
+}
+
+.textcard {
+    color: var(--text-lighter);
+    font-size: 1.9rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    word-spacing: 100vw;
+}
+
+.container {
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardr {
+    height: 280px;
+    max-width: 350px;
+    margin: 0 20px;
+    background: white;
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+    .cardr:hover {
+        height: 470px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    }
+
+    .cardr .img {
+        height: 200px;
+        width: 100%;
+    }
+
+        .cardr .img img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+    .cardr .top-text {
+        padding: 5px;
+    }
+
+        .cardr .top-text .name {
+            font-size: 25px;
+            font-weight: 600;
+            color: #202020;
+        }
+
+        .cardr .top-text p {
+            font-size: 20px;
+            font-weight: 600;
+            color: #e74c3c;
+            line-height: 20px;
+        }
+
+    .cardr .bottom-text {
+        padding: 0 20px 10px 20px;
+        margin-top: 5px;
+        background: white;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.1s;
+    }
+
+    .cardr:hover .bottom-text {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .cardr .bottom-text .btn {
+        margin: 10px 0;
+        text-align: left;
+    }
+
+        .cardr .bottom-text .btn a {
+            text-decoration: none;
+            background: #e74c3c;
+            color: #f2f2f2;
+            padding: 5px 8px;
+            border-radius: 3px;
+            display: inline-flex;
+            transition: 0.2s;
+        }
+
+            .cardr .bottom-text .btn a:hover {
+                transform: scale(0.9);
+            }
+
+@media screen and (max-width: 978px) {
+    .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .cardr {
+        max-width: 700px;
+        margin: 20px 0;
+    }
+}
+    /*//////////////////ZeroPlays/////////////////////////////////*/
+    body {
+    }
+
+    .TextoContenido {
+        font-family: 'Sen', sans-serif;
+    }
+
+    .cardt {
+        list-style: none;
+        position: relative;
+    }

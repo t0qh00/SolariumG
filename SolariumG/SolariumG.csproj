@@ -67,9 +67,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Brawlhalla.aspx" />
     <Content Include="Contacto.aspx" />
+    <Content Include="CSGO.aspx" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\img\Banner.jpg" />
+    <Content Include="css\img\Brawlhalla.jpeg" />
+    <Content Include="css\img\counter-strike-global-offensive-1892489.jpg" />
     <Content Include="css\img\Home.jpg" />
     <Content Include="css\img\LogoSolarium.jpeg" />
     <Content Include="css\img\SolariumxBrawlhalla.jpg" />
@@ -83,12 +87,26 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Brawlhalla.aspx.cs">
+      <DependentUpon>Brawlhalla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Brawlhalla.aspx.designer.cs">
+      <DependentUpon>Brawlhalla.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contacto.aspx.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Contacto.aspx.designer.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CSGO.aspx.cs">
+      <DependentUpon>CSGO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CSGO.aspx.designer.cs">
+      <DependentUpon>CSGO.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
