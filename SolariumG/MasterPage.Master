@@ -4,10 +4,12 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<%--<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>--%>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solarium Gaming</title>
     <%--se indica que librerias se van a utilizar--%>
     <link href="css/Styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -24,7 +26,7 @@
         </div>
         <div id="menu" class="TextoContenido" ><%--Aqui esta la barra de accesos--%>
             <nav class="navbar navbar-expand-md navbar-light" style="background-color: #FFA600">
-                <a class="navbar-brand" href="Default.aspx" style="font-size: 20px; font-weight: 500 "><img src="css/img/Home.jpg" alt="Solarium Gaming" style="height:40px; width:40px" /><%--Solarium Gaming--%></a>
+                <a class="navbar-brand" href="Default.aspx" style="font-size: 20px; font-weight: 500 "><%--<img src="css/img/Home.jpg" alt="Solarium Gaming" style="height:40px; width:40px" />--%>Solarium Gaming</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones" >
                     <span class="navbar-toggler-icon"></span>
@@ -53,6 +55,19 @@
             </asp:ContentPlaceHolder>
         </div>
     </form>
+    <footer style="background-image:url(css/img/Banner.jpg)">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Por aqui pueden ir las redes sociales</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>Aqui puede ir about us o algo asi</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>Tal vez aqúi pueden ir patrocinadores del equipo</h3>
+            </div>
+        </div>
+    </footer>
 </body>
     <%--se definen las librerias de js--%>
 <script src="js/jquery-3.4.1.min.js"></script>

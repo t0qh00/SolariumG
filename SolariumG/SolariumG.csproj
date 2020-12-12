@@ -74,16 +74,32 @@
     <Content Include="css\img\Banner.jpg" />
     <Content Include="css\img\Brawlhalla.jpeg" />
     <Content Include="css\img\counter-strike-global-offensive-1892489.jpg" />
+    <Content Include="css\img\Dota.jpg" />
+    <Content Include="css\img\fifa-21.jpg" />
+    <Content Include="css\img\Fortnite.jpg" />
     <Content Include="css\img\Home.jpg" />
+    <Content Include="css\img\League-of-Legends.jpg" />
     <Content Include="css\img\LogoSolarium.jpeg" />
+    <Content Include="css\img\Paladins.jpg" />
+    <Content Include="css\img\Rainbow.jpeg" />
+    <Content Include="css\img\Rocket-League.jpg" />
     <Content Include="css\img\SolariumxBrawlhalla.jpg" />
     <Content Include="css\img\SolariumxTempoDesserts.jpg" />
+    <Content Include="css\img\Valorant.jpg" />
     <Content Include="css\Styles.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Dota2.aspx" />
     <Content Include="Equipo.aspx" />
+    <Content Include="Fifa.aspx" />
+    <Content Include="Fortnite.aspx" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery-3.4.1.min.js" />
+    <Content Include="LeagueOfLegends.aspx" />
+    <Content Include="Paladins.aspx" />
     <Content Include="QuienesSomos.aspx" />
+    <Content Include="RainbowSix.aspx" />
+    <Content Include="RocketLeague.aspx" />
+    <Content Include="Valorant.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -115,12 +131,40 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Dota2.aspx.cs">
+      <DependentUpon>Dota2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dota2.aspx.designer.cs">
+      <DependentUpon>Dota2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Equipo.aspx.cs">
       <DependentUpon>Equipo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Equipo.aspx.designer.cs">
       <DependentUpon>Equipo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fifa.aspx.cs">
+      <DependentUpon>Fifa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fifa.aspx.designer.cs">
+      <DependentUpon>Fifa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fortnite.aspx.cs">
+      <DependentUpon>Fortnite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fortnite.aspx.designer.cs">
+      <DependentUpon>Fortnite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeagueOfLegends.aspx.cs">
+      <DependentUpon>LeagueOfLegends.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeagueOfLegends.aspx.designer.cs">
+      <DependentUpon>LeagueOfLegends.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
@@ -129,6 +173,13 @@
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="Paladins.aspx.cs">
+      <DependentUpon>Paladins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paladins.aspx.designer.cs">
+      <DependentUpon>Paladins.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuienesSomos.aspx.cs">
       <DependentUpon>QuienesSomos.aspx</DependentUpon>
@@ -136,6 +187,27 @@
     </Compile>
     <Compile Include="QuienesSomos.aspx.designer.cs">
       <DependentUpon>QuienesSomos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RainbowSix.aspx.cs">
+      <DependentUpon>RainbowSix.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RainbowSix.aspx.designer.cs">
+      <DependentUpon>RainbowSix.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RocketLeague.aspx.cs">
+      <DependentUpon>RocketLeague.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RocketLeague.aspx.designer.cs">
+      <DependentUpon>RocketLeague.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Valorant.aspx.cs">
+      <DependentUpon>Valorant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Valorant.aspx.designer.cs">
+      <DependentUpon>Valorant.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -148,7 +220,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{74fb01dc-930f-4fbc-9418-864a1078b68d}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

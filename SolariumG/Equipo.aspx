@@ -2,72 +2,76 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container">
-        <div class="row" style="margin-left: 25px">
-            <div class="col-md-4"> <%--Division de la fila 1 de cards--%>
-                <div class="card" style="width: 18rem;">
-                    <img src="css/img/LogoSolarium.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">ScaR</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="https://twitter.com/Solarium_Gaming" class="btn btn-primary">Twitter</a>
-                        <a href="https://twitter.com/Solarium_Gaming" class="btn btn-primary">Instagram</a>
-                    </div>
+
+    <section class="team-section" style="background-color: white">
+        <%-- #card section--%>
+        <div class="cgrid">
+            <%--#grid limitante--%>
+            <a class="card" href="CSGO.aspx">
+                <div class="cardbg" style="background-image: url(css/img/counter-strike-global-offensive-1892489.jpg)"></div>
+                <div class="ccontent">
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="css/img/LogoSolarium.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">JaggerBomb</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="https://twitter.com/Solarium_Gaming" class="btn btn-primary">Twitter</a>
-                    </div>
+            </a>
+            <a class="card" href="Brawlhalla.aspx">
+                <div class="cardbg" style="background-image: url(css/img/Brawlhalla.jpeg)"></div>
+                <div class="ccontent">
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="css/img/LogoSolarium.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Hen28XD99</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="https://twitter.com/Solarium_Gaming" class="btn btn-primary">Twitter</a>
-                    </div>
+            </a>
+            <a class="card" href="Dota2.aspx">
+                <div class="cardbg" style="background-image: url(css/img/Dota.jpg)"></div>
+                <div class="ccontent">
                 </div>
-            </div>
+            </a>
+            <a class="card" href="Fifa.aspx">
+                <div class="cardbg" style="background-image: url(css/img/fifa-21.jpg)"></div>
+                <div class="ccontent">
+                </div>
+            </a>
         </div>
-        <%--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////--%>
-        <div class="row" style="margin-left: 25px">
-            <div class="col-md-4"><%--Division de la fila 2 de cards--%>
-                <div class="card" style="width: 18rem;">
-                    <img src="css/img/LogoSolarium.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">t0qh00</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="https://twitter.com/Solarium_Gaming" class="btn btn-primary">Twitter</a>
-                    </div>
+    </section>
+
+    <section class="team-section" style="background-color: white">
+        <%-- #card section--%>
+        <div class="cgrid">
+            <%--#grid limitante--%>
+            <a class="card" href="LeagueOfLegends.aspx">
+                <div class="cardbg" style="background-image: url(css/img/League-of-Legends.jpg)"></div>
+                <div class="ccontent">
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="css/img/LogoSolarium.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">SteLeon</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="https://twitter.com/Solarium_Gaming" class="btn btn-primary">Twitter</a>
-                    </div>
+            </a>
+            <a class="card" href="Paladins.aspx">
+                <div class="cardbg" style="background-image: url(css/img/Paladins.jpg)"></div>
+                <div class="ccontent">
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="css/img/LogoSolarium.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Fantasma</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="https://twitter.com/Solarium_Gaming" class="btn btn-primary">Twitter</a>
-                    </div>
+            </a>
+            <a class="card" href="RainbowSix.aspx">
+                <div class="cardbg" style="background-image: url(css/img/Rainbow.jpeg)"></div>
+                <div class="ccontent">
                 </div>
-            </div>
+            </a>
+            <a class="card" href="RocketLeague.aspx">
+                <div class="cardbg" style="background-image: url(css/img/Rocket-League.jpg)"></div>
+                <div class="ccontent">
+                </div>
+            </a>
         </div>
-    </div>
+    </section>
+
+    <section class="team-section" style="background-color: white">
+        <%-- #card section--%>
+        <div class="cgrid">
+            <%--#grid limitante--%>
+            <a class="card" href="Valorant.aspx">
+                <div class="cardbg" style="background-image: url(css/img/Valorant.jpg)"></div>
+                <div class="ccontent">
+                </div>
+            </a>
+            <a class="card" href="Fortnite.aspx">
+                <div class="cardbg" style="background-image: url(css/img/Fortnite.jpg)"></div>
+                <div class="ccontent">
+                </div>
+            </a>
+        </div>
+    </section>
+
 </asp:Content>
